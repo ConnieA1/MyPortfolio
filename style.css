@@ -143,7 +143,6 @@ nav .menu a:hover {
   }
 }
 
-
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -197,6 +196,11 @@ section h2 {
 
 .about-text {
   flex: 2 1 400px;
+}
+
+.about-text p {
+  margin-bottom: 1.2rem; /* Adds spacing between paragraphs */
+  line-height: 1.6;      /* Improves readability */
 }
 
 /* Portfolio */

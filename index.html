@@ -2,377 +2,387 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akporiome Constance | Portfolio</title>
+  <meta name="description" content="Portfolio of Akporiome Constance, a frontend developer and graphics designer building responsive websites for brands, schools, and growing businesses." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Header -->
   <header>
-  <nav>
-    <h2>MyPortfolio</h2>
+    <nav>
+      <h2>Constance</h2>
 
-    <!-- Mobile Menu -->
-    <div id="menu" class="menu">
-      <a href="#hero">Home</a>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </div>
+      <div id="menu" class="menu">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-    <!-- Menu Toggle Button -->
-    <!-- Hamburger opens menu (#menu), X closes menu (#) -->
-    <a href="#menu" class="menu-icon open-btn">
-      <img src="images/menu-icon.png" alt="Menu" class="menu-img">
-    </a>
-    <a href="#" class="menu-icon close-btn">
-      <img src="images/close-icon.png" alt="Close" class="close-img">
-    </a>
-  </nav>
-</header>
+      <a href="#menu" class="menu-icon open-btn">
+        <img src="images/menu-icon.png" alt="Open menu" class="menu-img" />
+      </a>
+      <a href="#" class="menu-icon close-btn">
+        <img src="images/close-icon.png" alt="Close menu" class="close-img" />
+      </a>
+    </nav>
+  </header>
 
-
-
-  <!-- Hero -->
   <section class="hero" id="hero">
-    <div>
+    <div class="hero-content">
+      <span class="hero-tag">Available for website and design projects</span>
       <h1>Hello, I'm Akporiome Constance</h1>
-      <p>Frontend Developer | UI/UX Designer</p>
-      <a href="#portfolio" class="btn">View My Work</a>
+      <p class="hero-role">Frontend Developer | Graphics Designer</p>
+      <p class="hero-summary">I build clean, responsive websites and visual designs for schools, brands, and growing businesses that want to look professional online.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn">Hire Me</a>
+        <a href="#portfolio" class="btn btn-secondary">View My Work</a>
+      </div>
     </div>
   </section>
 
-  <!-- About -->
   <section id="about">
     <h2>About Me</h2>
     <div class="about">
-      <img src="images/profile1.jpg" alt="Profile Picture">
+      <img src="images/profile1.jpg" alt="Akporiome Constance profile picture" />
       <div class="about-text">
-        <p>
-          I'm a passionate frontend developer with a focus on creating modern, responsive, and user-friendly websites.
-        </p>
-
-        <p>
-          <strong>Skills:</strong> HTML, CSS, JavaScript, React, UI/UX Design
-        </p>
-      
-        <p>
-          I’m constantly exploring new ways to optimize performance and improve code efficiency. Whether it’s implementing smooth animations, creating reusable UI components, or fine-tuning website responsiveness, I focus on making the web both beautiful and functional.
-        </p>
-      
-        <p>
-          Outside coding, I enjoy experimenting with new CSS techniques, learning JavaScript frameworks, and analyzing how small design choices can dramatically improve the overall user experience.
-        </p>
+        <p>I am a frontend developer and graphics designer focused on helping individuals, schools, and small businesses present themselves professionally online.</p>
+        <p>I create responsive websites, clean user interfaces, and simple brand visuals that make information easy to find and help visitors trust what they see.</p>
+        <p><strong>Skills:</strong> HTML, CSS, JavaScript, React, responsive design, UI layout, graphics design, and brand presentation.</p>
+        <p>My goal is to build websites that are attractive, mobile-friendly, and useful for real people, not just nice to look at.</p>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio -->
+  <section id="services" class="section-alt">
+    <h2>Services</h2>
+    <p class="section-intro">Practical digital support for businesses, schools, personal brands, and organizations that need a stronger online presence.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Business Websites</h3>
+        <p>Modern responsive websites that explain your services clearly and make it easier for customers to contact you.</p>
+      </div>
+      <div class="service-card">
+        <h3>School & Organization Websites</h3>
+        <p>Clean websites for schools and groups with pages for information, gallery, announcements, and contact details.</p>
+      </div>
+      <div class="service-card">
+        <h3>Portfolio Websites</h3>
+        <p>Personal portfolio and brand websites for students, creatives, professionals, and freelancers.</p>
+      </div>
+      <div class="service-card">
+        <h3>Graphics & Visual Design</h3>
+        <p>Simple brand graphics, layout direction, and visual improvements that help your online presence feel polished.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="portfolio">
-    <h2>My Projects</h2>
+    <h2>Featured Projects</h2>
+    <p class="section-intro">A selection of responsive projects showing website layout, dashboard design, and business-focused presentation.</p>
+
     <div class="portfolio-grid">
       <div class="portfolio-item">
-        <img src="images/school-cs.png" alt="Project 1">
+        <img src="images/school-cs.png" alt="DE-GREAT School Website preview" />
         <div class="card-content">
           <h3>DE-GREAT School Website</h3>
-          <p>A simple modern responsive school website built with HTML, CSS, and JavaScript.</p>
+          <p>A responsive school website designed to improve online visibility and make school information easier to access.</p>
           <a href="#case1" class="btn-card">View Details</a>
         </div>
       </div>
+
       <div class="portfolio-item">
-        <img src="images/mentee-screenshot.png" alt="Project 2">
+        <img src="images/mentee-screenshot.png" alt="Mentup Konnect Dashboard preview" />
         <div class="card-content">
           <h3>Mentup Konnect Dashboard</h3>
-          <p>Responsive Frontend Mentor & Mentee Dashboard.</p>
+          <p>A clean dashboard interface for tracking mentorship activity, sessions, and user engagement.</p>
           <a href="#case2" class="btn-card">View Details</a>
         </div>
       </div>
+
       <div class="portfolio-item">
-        <img src="images/deepocean-media.png" alt="Project 3">
+        <img src="images/deepocean-media.png" alt="DeepOcean frontpage clone preview" />
         <div class="card-content">
           <h3>DeepOcean Frontpage Clone</h3>
-          <p>Responsive Frontend Cloning Project built with HTML and CSS</p>
+          <p>A responsive corporate homepage recreation focused on layout accuracy, structure, and professional presentation.</p>
           <a href="#case3" class="btn-card">View Details</a>
         </div>
       </div>
+
       <div class="portfolio-item">
-        <img src="images/aptech-cs.png" alt="Project 4">
+        <img src="images/aptech-cs.png" alt="Aptech homepage design preview" />
         <div class="card-content">
           <h3>Aptech Homepage Design</h3>
-          <p>Responsive Frontend Project (HTML + CSS Only)</p>
+          <p>A polished education homepage design with clear navigation, strong sections, and mobile responsiveness.</p>
           <a href="#case4" class="btn-card">View Details</a>
         </div>
       </div>
     </div>
   </section>
 
+    <section id="case-studies">
+    <div id="case1" class="case-study">
+      <h2>DE-GREAT School Website</h2>
+      <h3>Responsive School Website Project</h3>
 
-<!-- Case Studies -->
-<section id="case-studies">
+      <div class="cs-section">
+        <h4>Overview</h4>
+        <p>The website improved the school's online visibility, streamlined communication, and made important information easier for parents and visitors to find.</p>
+      </div>
 
-  <!-- Project 1 -->
-  <div id="case1" class="case-study">
-    <h2>DE-GREAT School Website</h2>
-    <h3>Responsive School Website Project</h3>
+      <div class="cs-section">
+        <h4>Tools & Process</h4>
+        <ul>
+          <li>Built with <strong>HTML, CSS, and JavaScript</strong></li>
+          <li>Responsive design optimized for all devices</li>
+          <li>Pages: Homepage, About, Gallery, Contact</li>
+        </ul>
+      </div>
 
-    <div class="cs-section">
-      <h4>Overview</h4>
-      <p>
-      The website improved the school’s online visibility, streamlined communication, 
-      and received positive feedback from staff and parents for its usability and design.
-    </p>
+      <div class="cs-section">
+        <h4>Outcome</h4>
+        <p>The final website gave the school a more organized digital presence and supported clearer communication with families.</p>
+      </div>
+
+      <div class="case-study-gallery">
+        <h4>Project Screenshots</h4>
+        <div class="screenshot-grid">
+          <div class="screenshot-card">
+            <img src="images/school-home.png" alt="School homepage screenshot" />
+            <p>Homepage</p>
+          </div>
+          <div class="screenshot-card">
+            <img src="images/school-about.png" alt="School about page screenshot" />
+            <p>About Section</p>
+          </div>
+          <div class="screenshot-card">
+            <img src="images/school-gallery.png" alt="School gallery screenshot" />
+            <p>Gallery Page</p>
+          </div>
+          <div class="screenshot-card">
+            <img src="images/school-contact.png" alt="School contact page screenshot" />
+            <p>Contact Page</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#portfolio" class="btn-card">Back to Portfolio</a>
     </div>
 
-    <div class="cs-section">
-    <h4>Tools & Process</h4>
-    <ul>
-      <li>Built with <strong>HTML, CSS, and JavaScript</strong></li>
-      <li>Responsive design optimized for all devices</li>
-      <li>Pages: Homepage, About, Gallery, Contact</li>
-    </ul>
-  </div>
+    <div id="case2" class="case-study">
+      <h2>Mentor & Mentee Connect Dashboard</h2>
+      <h3>Responsive Frontend Dashboard</h3>
 
-    <div class="cs-section">
-      <h4>Outcome</h4>
-      <p>
-      The website improved the school’s online visibility, streamlined communication, 
-      and received positive feedback from staff and parents for its usability and design.
-    </p>
+      <div class="cs-section">
+        <h4>Overview</h4>
+        <p>The dashboard was designed to simplify interaction between mentors and mentees with a responsive interface for tracking user activity, sessions, and engagement statistics.</p>
+      </div>
+
+      <div class="cs-section">
+        <h4>Tools & Process</h4>
+        <ul>
+          <li>HTML and CSS for structure and custom styling</li>
+          <li>Responsive layout optimized for desktop and mobile devices</li>
+          <li>jQuery for collapsible menus and navbar interaction</li>
+        </ul>
+      </div>
+
+      <div class="cs-section">
+        <h4>Outcome</h4>
+        <p>Delivered a clean and intuitive dashboard that helps users monitor engagement, track sessions, and view key metrics quickly.</p>
+      </div>
+
+      <div class="case-study-gallery">
+        <h4>Project Screenshots</h4>
+        <div class="screenshot-grid">
+          <div class="screenshot-card">
+            <img src="images/ment-hero.png" alt="Mentup hero page screenshot" />
+            <p>Hero Page Overview</p>
+          </div>
+          <div class="screenshot-card">
+            <img src="images/mentor-screenshot.png" alt="Mentor dashboard screenshot" />
+            <p>Mentor Dashboard</p>
+          </div>
+          <div class="screenshot-card">
+            <img src="images/mentee-screenshot.png" alt="Mentee dashboard screenshot" />
+            <p>Mentee Dashboard</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#portfolio" class="btn-card">Back to Portfolio</a>
     </div>
 
-    <!-- Screenshot Gallery -->
-  <div class="case-study-gallery">
-    <h4>Project Screenshots</h4>
-    <div class="screenshot-grid">
-      <div class="screenshot-card">
-        <img src="images/school-home.png" alt="Homepage Screenshot">
-        <p>Homepage</p>
+    <div id="case3" class="case-study">
+      <h2>DeepOcean Frontpage Clone</h2>
+      <h3>Responsive Frontend Cloning Project</h3>
+
+      <div class="cs-section">
+        <h4>Overview</h4>
+        <p>This project recreates a modern corporate homepage with hero banners, service highlights, ESG content, and media sections while keeping the layout responsive.</p>
       </div>
-      <div class="screenshot-card">
-        <img src="images/school-about.png" alt="About Screenshot">
-        <p>About Section</p>
+
+      <div class="cs-section">
+        <h4>Tools & Process</h4>
+        <ul>
+          <li>HTML5 and CSS3 for semantic structure and custom styling</li>
+          <li>CSS Grid and Flexbox for layout consistency</li>
+          <li>Media queries for responsive design across devices</li>
+        </ul>
       </div>
-      <div class="screenshot-card">
-        <img src="images/school-gallery.png" alt="Gallery Screenshot">
-        <p>Gallery Page (mobile)</p>
+
+      <div class="cs-section">
+        <h4>Outcome</h4>
+        <p>The result demonstrates attention to detail, responsive layout skills, and the ability to recreate professional landing page experiences.</p>
       </div>
-      <div class="screenshot-card">
-        <img src="images/school-contact.png" alt="Contact Screenshot">
-        <p>Contact Page</p>
+
+      <div class="case-study-gallery">
+        <h4>Project Screenshots</h4>
+        <div class="screenshot-grid">
+          <div class="screenshot-card">
+            <img src="images/deepocean-hero.png" alt="DeepOcean hero screenshot" />
+            <p>Hero Banner</p>
+          </div>
+          <div class="screenshot-card">
+            <img src="images/deepocean-whatwedo.png" alt="DeepOcean services screenshot" />
+            <p>What We Do Section</p>
+          </div>
+          <div class="screenshot-card">
+            <img src="images/deepocean-esg.png" alt="DeepOcean ESG screenshot" />
+            <p>ESG & Sustainability</p>
+          </div>
+          <div class="screenshot-card">
+            <img src="images/deepocean-media.png" alt="DeepOcean media screenshot" />
+            <p>News & Media Highlights</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-    <a href="#portfolio" class="btn-card">Back to Portfolio</a>
-  </div>
-
-  <!-- Project 2 -->
-  <div id="case2" class="case-study">
-    <h2>Mentor & Mentee Connect Dashboard</h2>
-    <h3>Responsive Frontend Dashboard</h3>
-
-    <div class="cs-section">
-      <h4>Overview</h4>
-      <p>
-      The Mentor & Mentee Connect Dashboard was designed to simplify interaction between mentors and mentees. 
-      It provides a responsive interface for tracking user activity, sessions, and engagement statistics.
-    </p>
-    </div>
-
-    <div class="cs-section">
-    <h4>Tools & Process</h4>
-    <ul>
-      <li>HTML & CSS for structure and custom styling</li>
-      <li>Responsive design optimized for all devices</li>
-      <li>jQuery for interactivity (collapsible menus & navbar)</li>
-    </ul>
-  </div>
-
-    <div class="cs-section">
-      <h4>Outcome</h4>
-      <p>
-      Delivered a clean and intuitive dashboard that helps mentors and mentees monitor engagement, 
-      track sessions, and view metrics. Optimized for both desktop and mobile devices.
-    </p>
+      <a href="#portfolio" class="btn-card">Back to Portfolio</a>
     </div>
 
-    <!-- Screenshot Gallery -->
-  <div class="case-study-gallery">
-    <h4>Project Screenshots</h4>
-    <div class="screenshot-grid">
-      <div class="screenshot-card">
-        <img src="images/ment-hero.png" alt="hero-page">
-        <p>Hero Page Overview</p>
+    <div id="case4" class="case-study">
+      <h2>Aptech Homepage Design</h2>
+      <h3>Responsive Frontend Project</h3>
+
+      <div class="cs-section">
+        <h4>Overview</h4>
+        <p>The Aptech Homepage Design project shows a modern, fully responsive homepage with a professional layout for a tech education brand.</p>
       </div>
-      <div class="screenshot-card">
-        <img src="images/mentor-screenshot.png" alt="mentor-dashboard">
-        <p>Mentor Dashboard</p>
+
+      <div class="cs-section">
+        <h4>Process & Tools</h4>
+        <ul>
+          <li>Semantic HTML5 structure</li>
+          <li>CSS Flexbox and Grid for layouts</li>
+          <li>CSS media queries for responsiveness</li>
+          <li>CSS-only hamburger menu with animated toggle</li>
+          <li>Theme styling with a navy and gold palette</li>
+        </ul>
       </div>
-      <div class="screenshot-card">
-        <img src="images/mentee-screenshot.png" alt="mentee-dashboard">
-        <p>Mentee Dashboard</p>
+
+      <div class="cs-section">
+        <h4>Outcome</h4>
+        <p>The final homepage includes a sticky header, hero section with overlay, bootcamp highlights, team showcase, and job opportunities section.</p>
+      </div>
+
+      <div class="case-study-gallery">
+        <h4>Project Screenshots</h4>
+        <div class="screenshot-grid">
+          <div class="screenshot-card">
+            <img src="images/aptech.jpg" alt="Aptech hero and footer screenshot" />
+            <p>Hero and Footer Sections</p>
+          </div>
+          <div class="screenshot-card">
+            <img src="images/aptech-nav.png" alt="Aptech navigation screenshot" />
+            <p>Responsive Header & Nav</p>
+          </div>
+          <div class="screenshot-card">
+            <img src="images/aptech-bootcamps.png" alt="Aptech bootcamps screenshot" />
+            <p>Bootcamps Section</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#portfolio" class="btn-card">Back to Portfolio</a>
+    </div>
+  </section>
+
+  <section id="process" class="section-alt">
+    <h2>How I Work</h2>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <span>01</span>
+        <h3>Consultation</h3>
+        <p>We discuss your goal, audience, pages, content, and the result your website should support.</p>
+      </div>
+
+      <div class="process-step">
+        <span>02</span>
+        <h3>Design Direction</h3>
+        <p>I plan the layout, colors, and structure so the website feels clear, professional, and easy to use.</p>
+      </div>
+
+      <div class="process-step">
+        <span>03</span>
+        <h3>Development</h3>
+        <p>I build responsive pages and make sure the site works well across desktop and mobile screens.</p>
+      </div>
+
+      <div class="process-step">
+        <span>04</span>
+        <h3>Review & Launch</h3>
+        <p>We review the final website, make refinements, and prepare it for deployment or sharing online.</p>
       </div>
     </div>
-  </div>
+  </section>
 
-    <a href="#portfolio" class="btn-card">Back to Portfolio</a>
-  </div>
+  <section id="testimonial">
+    <h2>Client-Focused Design</h2>
 
-  <!-- Case Study: DeepOcean Frontpage Clone -->
-<div id="case3" class="case-study">
-  <h2>DeepOcean Frontpage Clone</h2>
-  <h3>Responsive Frontend Cloning Project</h3>
-
-  <div class="cs-section">
-    <h4>Overview</h4>
-    <p>
-      This project is a frontend clone of the DeepOcean homepage. 
-      The goal was to replicate its modern corporate design, including 
-      hero banners, service highlights, ESG/Sustainability content, 
-      and media/news sections, with full responsiveness.
-    </p>
-  </div>
-
-  <div class="cs-section">
-    <h4>Tools & Process</h4>
-    <ul>
-      <li>HTML5 & CSS3 for semantic structure and custom styling</li>
-      <li>CSS Grid & Flexbox for layout consistency</li>
-      <li>Media queries for responsive design across devices</li>
-    </ul>
-  </div>
-
-  <div class="cs-section">
-    <h4>Outcome</h4>
-    <p>
-      The result is a clean and functional replica of the DeepOcean homepage. 
-      It demonstrates attention to detail, mastery of responsive design, and 
-      ability to recreate professional-grade landing pages.
-    </p>
-  </div>
-
-  <!-- Screenshot Gallery -->
-  <div class="case-study-gallery">
-    <h4>Project Screenshots</h4>
-    <div class="screenshot-grid">
-      <div class="screenshot-card">
-        <img src="images/deepocean-hero.png" alt="Hero Section Screenshot">
-        <p>Hero Banner</p>
-      </div>
-      <div class="screenshot-card">
-        <img src="images/deepocean-whatwedo.png" alt="What We Do Screenshot">
-        <p>What We Do Section</p>
-      </div>
-      <div class="screenshot-card">
-        <img src="images/deepocean-esg.png" alt="ESG Section Screenshot">
-        <p>ESG & Sustainability</p>
-      </div>
-      <div class="screenshot-card">
-        <img src="images/deepocean-media.png" alt="News/Media Screenshot">
-        <p>News & Media Highlights</p>
-      </div>
+    <div class="testimonial-box">
+      <p>"The websites I build are created to be clean, easy to navigate, and useful for the people who visit them. Every section is planned to help a business, school, or brand communicate better online."</p>
+      <strong>Akporiome Constance</strong>
     </div>
-  </div>
+  </section>
 
-    <a href="#portfolio" class="btn-card">Back to Portfolio</a>
-  </div>
+  <section id="contact">
+    <h2>Let's Build Your Website</h2>
 
-  <!-- Project 4 -->
-  <div id="case4" class="case-study">
-  <h2>Aptech Homepage Design</h2>
-  <h3>Responsive Frontend Project (HTML + CSS Only)</h3>
+    <div class="contact">
+      <p class="contact-intro">Have a business, school, brand, or personal project? Send me a message and let's discuss how to bring it online.</p>
 
-  <div class="cs-section">
-    <h4>Overview</h4>
-    <p>
-      The Aptech Homepage Design project showcases how I built a modern, 
-      fully responsive homepage using only HTML and CSS. The goal was to create 
-      a professional, easy-to-navigate interface that reflects Aptech’s 
-      reputation as a global leader in tech education.
-    </p>
-  </div>
+      <a href="https://wa.me/2348147063728" target="_blank" class="btn contact-cta">Contact Me on WhatsApp</a>
 
-  <div class="cs-section">
-    <h4>Process & Tools</h4>
-    <ul>
-      <li>Semantic HTML5 structure</li>
-      <li>CSS Flexbox & Grid for layouts</li>
-      <li>CSS Media Queries for responsiveness</li>
-      <li>CSS-only hamburger menu with animated toggle</li>
-      <li>Theme styling with <strong>navy + gold</strong> palette</li>
-    </ul>
-  </div>
+      <ul class="contact-list">
+        <li>
+          <a href="mailto:akporiomeconstance1@gmail.com" target="_blank">
+            <img src="images/gmail.jpg" alt="Gmail logo" class="contact-icon" />
+            akporiomeconstance1@gmail.com
+          </a>
+        </li>
 
-  <div class="cs-section">
-    <h4>Outcome</h4>
-    <p>
-      The final homepage is sleek and responsive across devices. 
-      It includes a sticky header, hero section with overlay, bootcamp highlights, 
-      team showcase, and job opportunities section. The dark navy + gold 
-      branding ensures clarity and a professional look.
-    </p>
-  </div>
+        <li>
+          <a href="https://linkedin.com/in/constance-ogheneyome" target="_blank">
+            <img src="images/linkedin.png" alt="LinkedIn logo" class="contact-icon" />
+            linkedin.com/in/constance-ogheneyome
+          </a>
+        </li>
 
-  <!-- Screenshot Gallery -->
-  <div class="case-study-gallery">
-    <h4>Project Screenshots</h4>
-    <div class="screenshot-grid">
-      <div class="screenshot-card">
-        <img src="images/aptech.jpg" alt="Hero/Footer Section Screenshot">
-        <p>Hero Section with Overlay and Footer Section</p>
-      </div>
-      <div class="screenshot-card">
-        <img src="images/aptech-nav.png" alt="Header & Navigation Screenshot">
-        <p>Responsive Header & Nav</p>
-      </div>
-      <div class="screenshot-card">
-        <img src="images/aptech-bootcamps.png" alt="Bootcamps Section Screenshot">
-        <p>Bootcamps Section</p>
-      </div>
+        <li>
+          <a href="https://wa.me/2348147063728" target="_blank">
+            <img src="images/whatsapp.jpg" alt="WhatsApp logo" class="contact-icon" />
+            +234 814 706 3728
+          </a>
+        </li>
+      </ul>
     </div>
-  </div>
+  </section>
 
-    <a href="#portfolio" class="btn-card">Back to Portfolio</a>
-  </div>
-</section>
-
-
-
-
- <section id="contact">
-  <h2>Contact Me</h2>
-  <div class="contact">
-    <ul class="contact-list">
-      <li>
-        <a href="mailto:akporiomeconstance1@gmail.com" target="_blank">
-          <img src="images/gmail.jpg" alt="Gmail Logo" class="contact-icon">
-          akporiomeconstance1@gmail.com
-        </a>
-      </li>
-      <li>
-        <a href="https://linkedin.com/in/constance-ogheneyome" target="_blank">
-          <img src="images/linkedin.png" alt="LinkedIn Logo" class="contact-icon">
-          linkedin.com/in/constance-ogheneyome
-        </a>
-      </li>
-      <li>
-        <a href="https://wa.me/2348147063728" target="_blank">
-          <img src="images/whatsapp.jpg" alt="WhatsApp Logo" class="contact-icon">
-          +234 814 706 3728
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
-
-
-
-  <!-- Footer -->
   <footer>
-    <p> © 2025 Akporiome Constance | All Rights Reserved</p>
+    <p>© 2025 Akporiome Constance | All Rights Reserved</p>
   </footer>
-
 </body>
 </html>
-

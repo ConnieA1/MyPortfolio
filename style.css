@@ -203,6 +203,114 @@ section h2 {
   color: var(--muted);
 }
 
+.portfolio-switcher {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.portfolio-switcher__input {
+  position: absolute;
+}
+
+.portfolio-switcher__options {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 2rem;
+  padding: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--light);
+}
+
+.portfolio-switcher__option {
+  display: inline-flex;
+  min-height: 44px;
+  padding: 0.6rem 1.25rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--text);
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.portfolio-switcher__option:hover {
+  color: var(--gold-dark);
+}
+
+#portfolio-websites:checked ~ .portfolio-switcher__options label[for="portfolio-websites"],
+#portfolio-product-design:checked ~ .portfolio-switcher__options label[for="portfolio-product-design"] {
+  background: var(--dark);
+  color: var(--gold);
+}
+
+#portfolio-websites:focus-visible ~ .portfolio-switcher__options label[for="portfolio-websites"],
+#portfolio-product-design:focus-visible ~ .portfolio-switcher__options label[for="portfolio-product-design"] {
+  outline: 3px solid var(--gold-dark);
+  outline-offset: 3px;
+}
+
+#portfolio-product-design:checked ~ .portfolio-switcher__panels .portfolio-grid {
+  display: none;
+}
+
+.portfolio-switcher__empty {
+  display: none;
+  min-height: 18rem;
+  padding: 3rem 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#portfolio-product-design:checked ~ .portfolio-switcher__panels .portfolio-switcher__empty {
+  display: flex;
+}
+
+.portfolio-switcher__empty h3 {
+  max-width: 32rem;
+  margin: 0 0 0.7rem;
+  color: var(--dark);
+  font-size: clamp(1.5rem, 3vw, 2.15rem);
+  line-height: 1.25;
+}
+
+.portfolio-switcher__empty p {
+  max-width: 34rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-switcher__option {
+    transition: none;
+  }
+}
+
 .about {
   display: flex;
   flex-wrap: wrap;
@@ -279,6 +387,21 @@ section h2 {
 @media (max-width: 600px) {
   .portfolio-grid {
     grid-template-columns: 1fr;
+  }
+
+  .portfolio-switcher__options {
+    margin-bottom: 1.5rem;
+  }
+
+  .portfolio-switcher__option {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .portfolio-switcher__empty {
+    min-height: 15rem;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 

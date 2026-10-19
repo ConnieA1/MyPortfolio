@@ -86,78 +86,112 @@
     <h2>Featured Projects</h2>
     <p class="section-intro">A selection of responsive projects showing website layout, business presentation, and client-focused design.</p>
 
-    <div class="portfolio-grid">
-      <div class="portfolio-item">
-        <img src="images/deamazing-school.png" alt="De Amazing School website preview" />
-        <div class="card-content">
-          <h3>De Amazing School Website</h3>
-          <p>A live school website built to present school information, improve parent communication, and create a professional online presence.</p>
-          <a href="#case5" class="btn-card">View Details</a>
-        </div>
+    <fieldset class="portfolio-switcher">
+      <legend class="visually-hidden">Choose a project category</legend>
+      <input
+        class="portfolio-switcher__input visually-hidden"
+        type="radio"
+        id="portfolio-websites"
+        name="portfolio-category"
+        value="websites"
+        aria-controls="website-projects"
+        checked
+      />
+      <input
+        class="portfolio-switcher__input visually-hidden"
+        type="radio"
+        id="portfolio-product-design"
+        name="portfolio-category"
+        value="product-design"
+        aria-controls="product-design-panel"
+      />
+
+      <div class="portfolio-switcher__options">
+        <label class="portfolio-switcher__option" id="portfolio-websites-label" for="portfolio-websites">Websites</label>
+        <label class="portfolio-switcher__option" id="portfolio-product-design-label" for="portfolio-product-design">Product Design</label>
       </div>
 
-      <div class="portfolio-item">
-        <img src="images/ideal360.png" alt="Ideal360 website preview" />
-        <div class="card-content">
-          <h3>Ideal360 Website</h3>
-          <p>A responsive business website designed to showcase services clearly and help visitors understand the brand quickly.</p>
-          <a href="#case6" class="btn-card">View Details</a>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <img src="images/olushola-akinrimisi.png" alt="Olushola Akinrimisi birthday tribute website preview" />
-        <div class="card-content">
-          <h3>Olushola Akinrimisi Birthday Tribute</h3>
-          <p>A birthday tribute website created to celebrate a special occasion with a warm design, personal message, and memorable online presentation.</p>
-          <a href="#case7" class="btn-card">View Details</a>
-       </div>
-      </div>
+      <div class="portfolio-switcher__panels">
+        <div class="portfolio-grid" id="website-projects" role="region" aria-labelledby="portfolio-websites-label">
+          <div class="portfolio-item">
+            <img src="images/deamazing-school.png" alt="De Amazing School website preview" />
+            <div class="card-content">
+              <h3>De Amazing School Website</h3>
+              <p>A live school website built to present school information, improve parent communication, and create a professional online presence.</p>
+              <a href="#case5" class="btn-card">View Details</a>
+            </div>
+          </div>
 
-      <div class="portfolio-item">
-        <img src="images/deallahdey-properties.png" alt="Deallahdey Properties website preview" />
-        <div class="card-content">
-          <h3>Deallahdey Properties Website</h3>
-          <p>A real estate website built to showcase property services, build trust, and make it easier for potential clients to connect.</p>
-          <a href="#case8" class="btn-card">View Details</a>
-        </div>
-      </div>
+          <div class="portfolio-item">
+            <img src="images/ideal360.png" alt="Ideal360 website preview" />
+            <div class="card-content">
+              <h3>Ideal360 Website</h3>
+              <p>A responsive business website designed to showcase services clearly and help visitors understand the brand quickly.</p>
+              <a href="#case6" class="btn-card">View Details</a>
+            </div>
+          </div>
 
-      <div class="portfolio-item">
-        <img src="images/school-cs.png" alt="DE-GREAT School Website preview" />
-        <div class="card-content">
-          <h3>DE-GREAT School Website</h3>
-          <p>A responsive school website designed to improve online visibility and make school information easier to access.</p>
-          <a href="#case1" class="btn-card">View Details</a>
-        </div>
-      </div>
+          <div class="portfolio-item">
+            <img src="images/olushola-akinrimisi.png" alt="Olushola Akinrimisi birthday tribute website preview" />
+            <div class="card-content">
+              <h3>Olushola Akinrimisi Birthday Tribute</h3>
+              <p>A birthday tribute website created to celebrate a special occasion with a warm design, personal message, and memorable online presentation.</p>
+              <a href="#case7" class="btn-card">View Details</a>
+            </div>
+          </div>
 
-      <div class="portfolio-item">
-        <img src="images/mentee-screenshot.png" alt="Mentup Konnect Dashboard preview" />
-        <div class="card-content">
-          <h3>Mentup Konnect Dashboard</h3>
-          <p>A clean dashboard interface for tracking mentorship activity, sessions, and user engagement.</p>
-          <a href="#case2" class="btn-card">View Details</a>
-        </div>
-      </div>
+          <div class="portfolio-item">
+            <img src="images/deallahdey-properties.png" alt="Deallahdey Properties website preview" />
+            <div class="card-content">
+              <h3>Deallahdey Properties Website</h3>
+              <p>A real estate website built to showcase property services, build trust, and make it easier for potential clients to connect.</p>
+              <a href="#case8" class="btn-card">View Details</a>
+            </div>
+          </div>
 
-      <div class="portfolio-item">
-        <img src="images/deepocean-media.png" alt="DeepOcean frontpage clone preview" />
-        <div class="card-content">
-          <h3>DeepOcean Frontpage Clone</h3>
-          <p>A responsive corporate homepage recreation focused on layout accuracy, structure, and professional presentation.</p>
-          <a href="#case3" class="btn-card">View Details</a>
-        </div>
-      </div>
+          <div class="portfolio-item">
+            <img src="images/school-cs.png" alt="DE-GREAT School Website preview" />
+            <div class="card-content">
+              <h3>DE-GREAT School Website</h3>
+              <p>A responsive school website designed to improve online visibility and make school information easier to access.</p>
+              <a href="#case1" class="btn-card">View Details</a>
+            </div>
+          </div>
 
-      <div class="portfolio-item">
-        <img src="images/aptech-cs.png" alt="Aptech homepage design preview" />
-        <div class="card-content">
-          <h3>Aptech Homepage Design</h3>
-          <p>A polished education homepage design with clear navigation, strong sections, and mobile responsiveness.</p>
-          <a href="#case4" class="btn-card">View Details</a>
+          <div class="portfolio-item">
+            <img src="images/mentee-screenshot.png" alt="Mentup Konnect Dashboard preview" />
+            <div class="card-content">
+              <h3>Mentup Konnect Dashboard</h3>
+              <p>A clean dashboard interface for tracking mentorship activity, sessions, and user engagement.</p>
+              <a href="#case2" class="btn-card">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img src="images/deepocean-media.png" alt="DeepOcean frontpage clone preview" />
+            <div class="card-content">
+              <h3>DeepOcean Frontpage Clone</h3>
+              <p>A responsive corporate homepage recreation focused on layout accuracy, structure, and professional presentation.</p>
+              <a href="#case3" class="btn-card">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img src="images/aptech-cs.png" alt="Aptech homepage design preview" />
+            <div class="card-content">
+              <h3>Aptech Homepage Design</h3>
+              <p>A polished education homepage design with clear navigation, strong sections, and mobile responsiveness.</p>
+              <a href="#case4" class="btn-card">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-switcher__empty" id="product-design-panel" role="region" aria-labelledby="product-design-title">
+          <h3 id="product-design-title">Product design case study coming soon.</h3>
+          <p>A product design case study will be added here.</p>
         </div>
       </div>
-    </div>
+    </fieldset>
   </section>
 
   <section id="case-studies">
@@ -387,43 +421,42 @@
       <div class="process-step">
         <span>01</span>
         <h3>Consultation</h3>
-        <p>We discuss your goal, audience, pages, content, and the result your website should support.</p>
+        <p>I discuss your goals, audience and the website or product interface you want to create.</p>
       </div>
 
       <div class="process-step">
         <span>02</span>
         <h3>Design Direction</h3>
-        <p>I plan the layout, colors, and structure so the website feels clear, professional, and easy to use.</p>
+        <p>I plan the structure, layout, and visual direction for a website or product interface. </p>
       </div>
 
       <div class="process-step">
         <span>03</span>
         <h3>Development</h3>
-        <p>I build responsive pages and make sure the site works well across desktop and mobile screens.</p>
+        <p>I build responsive websites and develop clear interface layouts for digital products.</p>
       </div>
 
       <div class="process-step">
         <span>04</span>
         <h3>Review & Launch</h3>
-        <p>We review the final website, make refinements, and prepare it for deployment or sharing online.</p>
+        <p>I review the website or product interface, make refinements, and prepare the work for its next stage.</p>
       </div>
     </div>
   </section>
 
   <section id="testimonial">
-    <h2>Client-Focused Design</h2>
+    <h2>My Approach</h2>
 
     <div class="testimonial-box">
-      <p>"The websites I build are created to be clean, easy to navigate, and useful for the people who visit them. Every section is planned to help a business, school, or brand communicate better online."</p>
-      <strong>Akporiome Constance</strong>
+      <p>I design digital product interfaces and build responsive websites with clear layouts and straightforward navigation.</p>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Let's Build Your Website</h2>
+    <h2>Let’s Create Your Next Digital Experience</h2>
 
     <div class="contact">
-      <p class="contact-intro">Have a business, school, brand, or personal project? Send me a message and let's discuss how to bring it online.</p>
+      <p class="contact-intro">Have a website or product project in mind? Reach out by WhatsApp or email to discuss your idea.</p>
 
       <a href="https://wa.me/2348147063728" target="_blank" class="btn contact-cta">Contact Me on WhatsApp</a>
 
